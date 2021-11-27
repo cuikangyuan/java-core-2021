@@ -3,6 +3,7 @@ package UnionFind;
 
 public class Main {
     public static void main(String[] args) {
+
         char[][] board = {
                 new char[]{'X', 'X', 'X', 'X', '0'},
                 new char[]{'X', 'X', 'X', '0', 'X'},
