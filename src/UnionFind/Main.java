@@ -10,6 +10,7 @@ public class Main {
                 new char[]{'X', '0', 'X', 'X', 'X'},
         };
 
+        //answer:
         /*
         * X X X X 0
         * X X X X X
