@@ -6,6 +6,7 @@ public class Node {
     public Node left;
     public Node right;
 
+
     public void add(Node node) {
         if (node == null) {
             return;
