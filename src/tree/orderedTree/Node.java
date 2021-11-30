@@ -3,9 +3,12 @@ package tree.orderedTree;
 public class Node {
 
     public int data;
-    public Node left;
-    public Node right;
+    public Node left = null;
+    public Node right = null;
 
+    public Node(int data) {
+        this.data = data;
+    }
 
     public void add(Node node) {
         if (node == null) {
@@ -25,4 +28,6 @@ public class Node {
             }
         }
     }
+
+
 }
