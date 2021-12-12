@@ -5,25 +5,27 @@ package GenericTest;
  * */
 import java.util.*;
 
-class A1 {}
-class A2 {}
-class A3 {}
-class A4 {}
-class B1 extends A1 {}
-class B2 extends A1 {}
-class B3 extends A3 {}
-class B4 extends A4 {}
-class C1 extends B2 {}
-class C2 extends B2 {}
-class C3 extends B3 {}
-class D1 extends C1 {}
-class D2 extends C2 {}
-class E1 extends D1 {}
-class E2 extends D1 {}
-class E3 extends D2 {}
-class E4 extends D2 {}
+
 
 public class UP_Class {
+
+    class A1 {}
+    class A2 {}
+    class A3 {}
+    class A4 {}
+    class B1 extends A1 {}
+    class B2 extends A1 {}
+    class B3 extends A3 {}
+    class B4 extends A4 {}
+    class C1 extends B2 {}
+    class C2 extends B2 {}
+    class C3 extends B3 {}
+    class D1 extends C1 {}
+    class D2 extends C2 {}
+    class E1 extends D1 {}
+    class E2 extends D1 {}
+    class E3 extends D2 {}
+    class E4 extends D2 {}
 
     public static void main(String args[]) {
         /********************************************
