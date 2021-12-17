@@ -8,16 +8,60 @@ public class Main {
         // int[] a = {9, 9, 1};//199
         // int[] b = {2, 1};//12
 
-        int[] a = {1};
-        int[] b = {9};
+        int[] a = {1,9};
+        int[] b = {9,9};
     
-        int[] res = new Main().add1(a, b);        
+        Main main = new Main();
+        int[] res = main.add(a, b);        
+        main.printArray(res);
+
+        System.out.println("a >= b : " + main.cmp(a, b));
+
+    }
+
+    private void printArray(int[] res) {
+        if(res == null || res.length == 0) {
+            return;
+        }
         for(int i = res.length - 1; i >= 0; i--) {
             if(res[i] != -1) System.out.print(String.valueOf(res[i]));
         }
+        System.out.println("");
     }
 
-    private int[] add1(int[] a, int[] b) {
+    //return whether a >= b
+    private boolean cmp(int[] a, int[] b) {
+        int aL = a == null ? 0 : a.length;
+        int bL = b == null ? 0 : b.length;
+        if(aL <= 0) {
+            return !(bL > 0);
+        }
+        if(bL <= 0) {
+            return aL >= 0;
+        }
+
+        //aL > 0 && bL > 0
+        if(aL != bL) {
+            return aL > bL;
+        } else {
+            
+            for(int i = aL - 1; i >= 0; i--) {
+                if(a[i] < b[i]) {
+                    return false;
+                }
+            }
+        }
+
+        return true;
+        
+    }
+
+    private int[] sub(int[] a, int[] b) {
+        int[] res = null;
+        return res;
+    }
+
+    private int[] add(int[] a, int[] b) {
 
         int aL = a.length;
         int bL = b.length;
