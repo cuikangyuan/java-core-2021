@@ -1,6 +1,4 @@
-package UnionFind;
-
-import java.util.Arrays;
+package unionFind;
 
 public class UnionFind {
 

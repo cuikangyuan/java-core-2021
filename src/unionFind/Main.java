@@ -1,4 +1,4 @@
-package UnionFind;
+package unionFind;
 
 
 public class Main {

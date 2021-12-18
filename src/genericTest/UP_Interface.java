@@ -1,4 +1,4 @@
-package GenericTest;
+package genericTest;
 
 /* <? super T> 与 <? extends T> 的区别，
  *  T 代表一个给定的接口

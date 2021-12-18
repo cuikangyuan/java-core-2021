@@ -1,4 +1,4 @@
-package DFS;
+package dfs;
 
 //输入MxN的二维矩阵，其中包含字符X和O 找到矩阵中四面被X围住的O ，并且把它们替换成X
 public class MatrixReplace {
