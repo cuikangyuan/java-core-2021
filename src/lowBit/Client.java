@@ -14,6 +14,7 @@ public class Client {
         //1100
         //1111
         int[] a = new int[] {1, 2, 3, 4, 5, 15};
+        
         client.printNumberOfOne(a);
     }
 
