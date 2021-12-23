@@ -1,4 +1,4 @@
-package doublePointers;
+package algorithm.doublePointers;
 
 public class BasicUse {
 }

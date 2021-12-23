@@ -1,4 +1,4 @@
-package canJump;
+package algorithm.canJump;
 
 public class Main {
 

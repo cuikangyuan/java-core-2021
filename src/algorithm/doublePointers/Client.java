@@ -1,4 +1,4 @@
-package doublePointers;
+package algorithm.doublePointers;
 
 import java.util.Scanner;
 

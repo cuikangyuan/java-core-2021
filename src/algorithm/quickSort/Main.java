@@ -1,4 +1,4 @@
-package quickSort;
+package algorithm.quickSort;
 
 public class Main {
     public static void main(String[] args) {

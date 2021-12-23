@@ -1,4 +1,4 @@
-package mergeSort;
+package algorithm.mergeSort;
 
 public class Main {
 

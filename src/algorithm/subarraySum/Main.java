@@ -1,4 +1,4 @@
-package subarraySum;
+package algorithm.subarraySum;
 
 public class Main {
 

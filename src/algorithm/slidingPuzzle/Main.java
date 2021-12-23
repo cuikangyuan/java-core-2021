@@ -1,4 +1,4 @@
-package slidingPuzzle;
+package algorithm.slidingPuzzle;
 
 import java.util.*;
 

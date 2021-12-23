@@ -1,4 +1,4 @@
-package intervalMerging;
+package algorithm.intervalMerging;
 
 import jdk.internal.util.xml.impl.Pair;
 

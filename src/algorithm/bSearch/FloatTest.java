@@ -1,4 +1,4 @@
-package bSearch;
+package algorithm.bSearch;
 
 public class FloatTest {
 

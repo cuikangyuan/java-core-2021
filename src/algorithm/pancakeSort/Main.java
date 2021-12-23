@@ -1,4 +1,4 @@
-package pancakeSort;
+package algorithm.pancakeSort;
 
 public class Main {
 

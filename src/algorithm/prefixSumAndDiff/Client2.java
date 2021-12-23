@@ -1,4 +1,4 @@
-package prefixSumAndDiff;
+package algorithm.prefixSumAndDiff;
 
 import java.util.Scanner;
 

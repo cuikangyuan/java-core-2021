@@ -1,4 +1,4 @@
-package arrayUnique;
+package algorithm.arrayUnique;
 
 public class Client {
 

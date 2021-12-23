@@ -1,4 +1,4 @@
-package dfs;
+package algorithm.dfs;
 
 public class Main {
 

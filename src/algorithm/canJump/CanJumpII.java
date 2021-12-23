@@ -1,4 +1,4 @@
-package canJump;
+package algorithm.canJump;
 
 import java.util.Arrays;
 

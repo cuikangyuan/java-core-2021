@@ -1,4 +1,4 @@
-package lowBit;
+package algorithm.lowBit;
 
 import java.util.Scanner;
 

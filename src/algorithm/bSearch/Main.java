@@ -1,4 +1,4 @@
-package bSearch;
+package algorithm.bSearch;
 
 //整数二分
 public class Main {

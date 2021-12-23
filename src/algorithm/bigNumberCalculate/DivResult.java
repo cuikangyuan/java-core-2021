@@ -1,4 +1,4 @@
-package bigNumberCalculate;
+package algorithm.bigNumberCalculate;
 
 public class DivResult {
     public int[] divRes;

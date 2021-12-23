@@ -1,4 +1,4 @@
-package tree.orderedTree;
+package algorithm.tree.orderedTree;
 
 public class Node {
 

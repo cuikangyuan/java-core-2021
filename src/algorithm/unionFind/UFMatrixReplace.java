@@ -1,4 +1,4 @@
-package unionFind;
+package algorithm.unionFind;
 
 public class UFMatrixReplace {
 

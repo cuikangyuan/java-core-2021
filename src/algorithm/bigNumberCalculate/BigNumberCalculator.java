@@ -1,4 +1,4 @@
-package bigNumberCalculate;
+package algorithm.bigNumberCalculate;
 
 import com.sun.org.apache.xpath.internal.operations.Div;
 

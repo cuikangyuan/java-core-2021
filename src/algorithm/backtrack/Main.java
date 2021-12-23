@@ -1,4 +1,4 @@
-package backtrack;
+package algorithm.backtrack;
 
 
 import java.lang.reflect.InvocationHandler;
