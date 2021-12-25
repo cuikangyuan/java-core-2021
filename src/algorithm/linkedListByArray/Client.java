@@ -38,6 +38,9 @@ public class Client {
         deLinkedList.add(4, 4);
         deLinkedList.add(5, 5);
 
+
+        deLinkedList.remove(5);
+        deLinkedList.remove(6);
         deLinkedList.print();
 
     }
