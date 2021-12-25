@@ -10,10 +10,10 @@ public class Client {
         KMP kmp = new KMP();
 
 //        bm.find(s, p);
-        int m = 6;
+        int m = 5;
         int n = 2;
         p = new char[]{' ', 'a', 'b'};
-        s = new char[]{' ', 'a', 'b', 'a', 'b', 'a', 'b'};
+        s = new char[]{' ', 'a', 'b', 'a', 'b', 'a'};
 
         kmp.find(s, m , p, n);
     }
