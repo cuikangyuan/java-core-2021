@@ -1,5 +1,6 @@
 package algorithm.unionFind;
 
+//836.合并集合
 public class UnionFindCollection {
 
     private int N = 100010;
