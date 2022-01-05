@@ -2,8 +2,6 @@ package algorithm.heapSort;
 
 import java.util.Scanner;
 
-import javafx.geometry.Side;
-
 public class Client {
     
     private static final int N = 100010;
@@ -12,9 +10,10 @@ public class Client {
     private int m = 0;
     private int size = 0;
 
-    //5 3
-    //4 5 1 3 2
-
+    /*
+    5 3
+    4 5 1 3 2
+    */
     public Client() {
         h = new int[N];
     }
@@ -30,11 +29,11 @@ public class Client {
 
     private void down(int u) {
         int t = u;
-        if(u * 2 <= n && h[u * 2] < h[t]) {
+        if(u * 2 <= size && h[u * 2] < h[t]) {
             t = u * 2;
         }
 
-        if(u * 2 + 1 <= n && h[u * 2 + 1] < h[t]) {
+        if(u * 2 + 1 <= size && h[u * 2 + 1] < h[t]) {
             t = u * 2 + 1;
         }
 
@@ -63,7 +62,8 @@ public class Client {
         }
 
 
-        for(int i = n / 2; i >= 1; i--) {
+        //O(n)
+        for(int i = size / 2; i >= 1; i--) {
             down(i);
         }
 
