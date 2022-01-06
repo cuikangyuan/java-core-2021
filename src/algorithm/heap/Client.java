@@ -37,6 +37,8 @@ public class Client {
         //client.deleteMin();
 
         client.deleteKthItem(1);
+        //client.deleteKthItem(1);
+
         // client.deleteKthItem(2);
         // client.deleteKthItem(4);
         // client.deleteKthItem(5);
