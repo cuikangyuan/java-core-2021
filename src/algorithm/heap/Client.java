@@ -8,25 +8,52 @@ public class Client {
 
     private static final int N = 100010;
     private int[] h;
-    private int n = 0;
     private int m = 0;
     private int size = 0;
 
+    private int[] ph;
+    private int[] hp;
+
     /*
-    5 3
-    4 5 1 3 2
+    10
+    66 4 5 1 23 3 2 7 9 1 
     */
     public Client() {
         h = new int[N];
+        ph = new int[N];
+        hp = new int[N];
     }
 
     public static void main(String[] args) {
         Client client = new Client();
-        client.sort();
+        client.insert(4);
+        client.insert(5);
+        client.insert(1);
+        client.insert(3);
+        client.insert(2);
+
+
+        //client.deleteMin();
+        //client.deleteMin();
+
+        client.deleteKthItem(1);
+        // client.deleteKthItem(2);
+        // client.deleteKthItem(4);
+        // client.deleteKthItem(5);
+        
+        // client.modifyKthItem(1, 9);
+        // client.modifyKthItem(2, 8);
+        // client.modifyKthItem(3, 7);
+        // client.modifyKthItem(4, 6);
+        // client.modifyKthItem(5, 5);
+        client.printf();
     }
 
     private void up(int u) {
-
+        while(u / 2 > 0  && h[u] < h[u / 2]) {
+            swap(u, u / 2);
+            u = u / 2;
+        }
     }
 
     private void down(int u) {
@@ -47,37 +74,90 @@ public class Client {
     }
 
     private void swap(int i, int j) {
-        int t = h[i];
+        int t = 0;
+        
+        t = ph[hp[i]];
+        ph[hp[i]] = ph[hp[j]];
+        ph[hp[j]] = t;
+
+
+        t = hp[i];
+        hp[i] = hp[j];
+        hp[j] = t;
+
+        t = h[i];
         h[i] = h[j];
         h[j] = t;
+
+
     }
 
-    private void sort() {
+    private void insert(int x) {
+        size++;
+        m++;
+        ph[m] = size;
+        hp[size] = m;
+        h[size] = x;
+        up(size);
+    }
 
-        Scanner scanner = new Scanner(System.in);
-        n = scanner.nextInt();
-        m = scanner.nextInt();
-        size = n;
-        scanner.nextLine();
-        for(int i = 1; i <= size; i++) {
-            h[i] = scanner.nextInt();
-        }
+    private void deleteMin() {
+        swap(1, size);
+        size--;
+        down(1);
+    }
+
+    
+    private void deleteKthItem(int k) {
+
+        int idx = ph[k];
+        swap(idx, size);
+        size--;
+        down(idx);
+        up(idx);
+
+    }
+
+    private void modifyKthItem(int k, int x) {
+        int idx = ph[k];
+        h[idx] = x;
+        down(idx);
+        up(idx);
+    }
 
 
-        //O(n)
-        for(int i = size / 2; i >= 1; i--) {
-            down(i);
-        }
-
-        // for(int i = 1; i <= size; i++) {
-        //     System.out.print(h[i] + " ");
-        // }
-
+    private void printf() {
+        int m = size;
         while(m-- > 0) {
             System.out.print(h[1] + " ");
             h[1] = h[size];
             size--;
             down(1);
         }
+    }
+    private void sort() {
+
+        // Scanner scanner = new Scanner(System.in);
+        // n = scanner.nextInt();
+        // size = n;
+        // scanner.nextLine();
+        // for(int i = 1; i <= size; i++) {
+        //     h[i] = scanner.nextInt();
+        // }
+
+
+        // //O(n)
+        // for(int i = size / 2; i >= 1; i--) {
+        //     down(i);
+        // }
+
+
+        // int m = size;
+        // while(m-- > 0) {
+        //     System.out.print(h[1] + " ");
+        //     h[1] = h[size];
+        //     size--;
+        //     down(1);
+        // }
     }
 }
