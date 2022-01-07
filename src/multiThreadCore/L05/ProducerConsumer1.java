@@ -16,13 +16,13 @@ public class ProducerConsumer1 {
                 while(true) {
                     try {
                         queue.put(new Object());
-                        System.out.println("producer put item ... ");
+                        System.out.println("1.producer put item ... ");
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                         break;
                     }
                 }
-                System.out.println("producer finished !!!! ");
+                System.out.println("1.producer finished !!!! ");
             }
         };
 
@@ -36,14 +36,14 @@ public class ProducerConsumer1 {
                 while((value = new Random().nextInt(1000)) >= 100) {
                     try {
                         queue.take();
-                        System.out.println("consumer take item $$$ ");
+                        System.out.println("1.consumer take item $$$ ");
                         Thread.sleep(1000);
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
                 }
                 pt.interrupt();
-                System.out.println("consumer finished !!!! latch = " + value);
+                System.out.println("1.consumer finished !!!! latch = " + value);
             }
         };
 

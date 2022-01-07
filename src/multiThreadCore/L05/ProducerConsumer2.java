@@ -13,7 +13,7 @@ public class ProducerConsumer2 {
 
 
 
-    public static class MyBlockingQueue {
+    public static class MyBlockingQueue2 {
 
         private List list;
         private int max = 16;
@@ -21,7 +21,7 @@ public class ProducerConsumer2 {
         private Condition notFull = lock.newCondition();
         private Condition notEmpty = lock.newCondition();
 
-        public MyBlockingQueue(int size) {
+        public MyBlockingQueue2(int size) {
             this.max = size;
             list = new LinkedList<>();
         }
@@ -59,7 +59,7 @@ public class ProducerConsumer2 {
 
 
     public static void main(String[] args) {
-        MyBlockingQueue queue = new MyBlockingQueue(10);
+        MyBlockingQueue2 queue = new MyBlockingQueue2(10);
 
         Runnable producer = new Runnable() {
             @Override
