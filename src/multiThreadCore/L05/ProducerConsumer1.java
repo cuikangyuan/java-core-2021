@@ -19,10 +19,15 @@ public class ProducerConsumer1 {
                         System.out.println("producer put item ... ");
                     } catch (InterruptedException e) {
                         e.printStackTrace();
+                        break;
                     }
                 }
+                System.out.println("producer finished !!!! ");
             }
         };
+
+        Thread pt = new Thread(producer);
+        pt.start();
 
         Runnable consumer = new Runnable() {
             @Override
@@ -37,11 +42,11 @@ public class ProducerConsumer1 {
                         e.printStackTrace();
                     }
                 }
+                pt.interrupt();
                 System.out.println("consumer finished !!!! latch = " + value);
             }
         };
 
-        new Thread(producer).start();
         new Thread(consumer).start();
     }
 }
