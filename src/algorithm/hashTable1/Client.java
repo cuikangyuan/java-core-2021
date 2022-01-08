@@ -1,4 +1,4 @@
-package algorithm.hashTable;
+package algorithm.hashTable1;
 
 import java.util.Arrays;
 
