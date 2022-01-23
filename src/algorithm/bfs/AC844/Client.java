@@ -1,9 +1,9 @@
-package algorithm.bfs.AC847;
+package algorithm.bfs.AC844;
 
-
-//847.图中点的层次
+//844.走迷宫
 public class Client {
+
     public static void main(String[] args) {
         //TODO
-    }    
+    }
 }

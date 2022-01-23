@@ -1,9 +1,8 @@
-package algorithm.bfs.AC847;
+package algorithm.dfs.AC843;
 
-
-//847.图中点的层次
+//843 n皇后问题
 public class Client {
     public static void main(String[] args) {
         //TODO
-    }    
+    }
 }

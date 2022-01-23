@@ -1,9 +1,9 @@
-package algorithm.bfs.AC847;
+package algorithm.dfs.AC846;
 
-
-//847.图中点的层次
+//846.树的重心
 public class Client {
+
     public static void main(String[] args) {
         //TODO
-    }    
+    }
 }
