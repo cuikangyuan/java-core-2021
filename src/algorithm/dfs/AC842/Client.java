@@ -1,4 +1,4 @@
-package algorithm.dfs.fullArrangement;
+package algorithm.dfs.AC842;
 
 import java.util.Scanner;
 
