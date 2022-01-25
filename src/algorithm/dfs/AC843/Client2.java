@@ -14,6 +14,7 @@ public class Client2 {
     public Client2() {
         g = new char[N][N];
         row = new boolean[N];
+        col = new boolean[N];
         dg = new boolean[N];
         udg = new boolean[N];
     }
@@ -38,7 +39,7 @@ public class Client2 {
             return;
         }
 
-        System.out.println("dfs enter !!! x = " + x + " y = " + y + " s = " + s);
+        //System.out.println("dfs enter !!! x = " + x + " y = " + y + " s = " + s);
 
         //not place a queue at this pos
         dfs(x, y + 1, s);
