@@ -27,6 +27,7 @@ public class Client2 {
 
 
         if(x == n) {
+            System.out.println("(" + x + ", " + y + ") s = " + s + " backtrace !!! ");
             if(s == n) {
                 for(int i = 0; i < n; i++) {
                     for(int j = 0; j < n; j++) {
