@@ -27,7 +27,7 @@ public class Client2 {
 
 
         if(x == n) {
-            System.out.println("(" + x + ", " + y + ") s = " + s + " backtrace !!! ");
+            // System.out.println("(" + x + ", " + y + ") s = " + s + " backtrace !!! ");
             if(s == n) {
                 for(int i = 0; i < n; i++) {
                     for(int j = 0; j < n; j++) {
@@ -40,7 +40,7 @@ public class Client2 {
             return;
         }
 
-        System.out.println("(" + x + ", " + y + ") s = " + s + " not place ");
+        // System.out.println("(" + x + ", " + y + ") s = " + s + " not place ");
 
         //not place a queue at this pos
         dfs(x, y + 1, s);
@@ -49,7 +49,7 @@ public class Client2 {
         if(!row[x] && !col[y] && !udg[n - y + x] && !dg[y + x]) {
             row[x] = col[y] = udg[n - y + x] = dg[y + x] = true;
             g[x][y] =  'Q';
-            System.out.println("(" + x + ", " + y + ") s = " + (s+1) + " place ");
+            // System.out.println("(" + x + ", " + y + ") s = " + (s+1) + " place ");
             dfs(x, y + 1, s + 1);
             row[x] = col[y] = udg[n - y + x] = dg[y + x] = false;
             g[x][y] =  '.';
@@ -57,7 +57,7 @@ public class Client2 {
     }
 
     private void testNQueue() {
-        n = 3;
+        n = 4;
 
         for(int i = 0; i < n; i++) {
             for(int j = 0; j < n; j++) {
