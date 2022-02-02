@@ -4,11 +4,11 @@ import java.util.Comparator;
 import java.util.PriorityQueue;
 import java.util.Queue;
 
-import javax.print.attribute.standard.PrinterInfo;
 
 //AC 850 Dijkstra求最短路径 II
 public class Client2 {
 
+    private static final int INF = 0x3f3f3f3f;
     private static final int N = 100010;
     private int n, m;
 
@@ -122,5 +122,6 @@ public class Client2 {
     
         Client2 client2 = new Client2();
         client2.testDijkstra();
+
     }
 }

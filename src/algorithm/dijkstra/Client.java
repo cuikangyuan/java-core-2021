@@ -3,6 +3,7 @@ package algorithm.dijkstra;
 //AC 849 Dijkstra求最短路径 I
 public class Client {
 
+    private static final int INF = 0x3f3f3f3f;
 
     private static final int N = 500;
     private static final int M = 10000;
