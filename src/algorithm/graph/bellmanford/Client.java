@@ -30,7 +30,7 @@ public class Client {
     public Client() {
         n = 3;
         m = 3;
-        k = 1;
+        k = 2;
         dist = new int[N];
         backup = new int[N];
         edges = new Edge[M];
