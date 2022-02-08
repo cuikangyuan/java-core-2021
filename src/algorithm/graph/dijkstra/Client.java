@@ -1,4 +1,4 @@
-package algorithm.dijkstra;
+package algorithm.graph.dijkstra;
 
 //AC 849 Dijkstra求最短路径 I
 public class Client {

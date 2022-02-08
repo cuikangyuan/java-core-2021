@@ -1,4 +1,4 @@
-package algorithm.dijkstra;
+package algorithm.graph.dijkstra;
 
 import java.util.Comparator;
 import java.util.PriorityQueue;
