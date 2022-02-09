@@ -45,6 +45,7 @@ public class Client {
         dist[1] = 0;
 
         for(int i = 0; i < k; i++) {
+            //避免串联 影响最终结果
             backup = Arrays.copyOf(dist, dist.length);
             for(int j = 0; j < m; j++) {
                 int a = edges[j].a;
@@ -55,6 +56,7 @@ public class Client {
 
         }
         
+        //路径存在负权回路的话 最短路径也不存在
         if(dist[n] > INF / 2) return -1;
 
         return dist[n];
