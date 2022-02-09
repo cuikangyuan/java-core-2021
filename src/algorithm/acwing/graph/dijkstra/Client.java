@@ -1,8 +1,4 @@
-<<<<<<< HEAD:src/algorithm/acwing/dijkstra/Client.java
-package algorithm.acwing.dijkstra;
-=======
-package algorithm.graph.dijkstra;
->>>>>>> 44d64a4c0672466e43444424ad86ee0c4fd543e4:src/algorithm/graph/dijkstra/Client.java
+package algorithm.acwing.graph.dijkstra;
 
 //AC 849 Dijkstra求最短路径 I
 public class Client {
