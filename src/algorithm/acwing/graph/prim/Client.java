@@ -54,6 +54,7 @@ public class Client {
             if(i > 0) res += dist[t];
 
             for(int j = 1; j <= n; j++) {
+                //最小生成树是没有自环的 所以要先累加res 避免在这里 j == t 时 更新了t ，导致结果错误
                 dist[j] = Math.min(dist[j], g[t][j]);
             }
 
