@@ -14,6 +14,10 @@ public class Client {
         for (int i = 2; i <= n; i++) {
             if (!st[i]) {
                 primes[cnt++] = i;
+                //优化：只筛掉质数的倍数也可
+//                for (int j = i + i; j <= n; j += i) {
+//                    st[j] = true;
+//                }
             }
 
             for (int j = i + i; j <= n; j += i) {
@@ -33,6 +37,6 @@ public class Client {
     }
 
     public static void main(String[] args) {
-        get_primes1(3);
+        get_primes1(6);
     }
 }
