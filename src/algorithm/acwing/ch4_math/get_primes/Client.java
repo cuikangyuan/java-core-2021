@@ -57,9 +57,9 @@ public class Client {
     }
 
     public static void main(String[] args) {
-        get_primes1(7);
+//        get_primes1(7);
 
         System.out.println("");
-        get_primes2(7);
+        get_primes2(9);
     }
 }
